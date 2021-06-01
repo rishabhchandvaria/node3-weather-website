@@ -19,7 +19,7 @@ const forecast = ( latitude , longitude , callback ) => {
     }
     else 
     {
-         callback ( undefined , 'Weather Description ' + body . current . weather_descriptions [ 0 ] + '.Current temperature is ' + body . current . temperature + '.But feelslike temperature is ' + body . current . feelslike ) 
+         callback ( undefined , 'Todays Weather is ' + body . current . weather_descriptions [ 0 ] + '.It is ' + body . current . temperature + ' degress,but it feelslike ' + body . current . feelslike + ' degrees.Humidity is ' + body.current.humidity + ' and there is ' + body.current.precip + '% chances of rain.') 
          // callback(undefined, response.body.current.weather_descriptions[0] + ' It is currently ' + response.body.current.temperature + ' degress out. There is a ' + response.body.current.feelslike + ' degrees.') 
     } 
 }) } 
